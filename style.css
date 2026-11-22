@@ -125,9 +125,9 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
   font-weight: 400;
 }
 
+.sidebar-footer { margin-top: auto; padding-top: 24px; }
 .site-search {
   position: relative;
-  margin-top: auto;
   padding-top: 24px;
   font-family: "Source Sans 3", Arial, sans-serif;
   font-size: 14px;
@@ -190,9 +190,11 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
 .social-links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 25px;
-  margin-top: 38px;
+  margin-top: 0;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
   color: #808080;
 }
 .social-links a {
@@ -287,7 +289,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
   .search-label { display: none; }
   .site-search form { top: 40px; right: 0; bottom: auto; left: auto; width: 280px; }
   .site-main { margin-left: 0; padding: 32px 24px; }
-  .content-section { margin-bottom: 44px; padding-bottom: 48px; scroll-margin-top: 172px; }
+  .content-section { margin-bottom: 44px; padding-bottom: 48px; scroll-margin-top: 216px; }
   #about { min-height: auto; }
   .section-title { font-size: 32px; margin-bottom: 32px; }
   .about-layout {
@@ -295,8 +297,13 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
     gap: 28px;
   }
   .profile { width: min(100%, 365px); margin: auto; }
-  .social-links { margin-top: 24px; }
-  .publication-year { margin-bottom: 32px; scroll-margin-top: 172px; }
+  .sidebar-footer { margin-top: 12px; padding-top: 0; }
+  .social-links { gap: 16px; padding-top: 0; border-top: 0; }
+  .social-links a { width: 32px; height: 32px; }
+  .linkedin { font-size: 26px; }
+  .scholar { font-size: 28px; }
+  .scholar span { font-size: 16px; }
+  .publication-year { margin-bottom: 32px; scroll-margin-top: 216px; }
   .publication-year > summary { font-size: 24px; }
   .news-month { margin-bottom: 44px; }
 }
