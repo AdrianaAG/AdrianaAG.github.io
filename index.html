@@ -3,89 +3,681 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About — Adriana Alvarado Garcia, HCI research scientist.">
-  <title>About | Adriana Alvarado Garcia, PhD</title>
+  <meta name="description" content="Adriana Alvarado Garcia — HCI research scientist. About, publications, and recent news.">
+  <title>Adriana Alvarado Garcia, PhD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- Keep this header consistent across all three pages. -->
-  <header class="site-header">
-    <a class="site-name" href="index.html">Adriana Alvarado Garcia, PhD</a>
-    <nav aria-label="Main navigation">
-        <a href="index.html" aria-current="page">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="recent-news.html">Recent News</a>
-        <details class="site-search">
-          <summary aria-label="Search this site"><span class="search-icon" aria-hidden="true"></span></summary>
-          <form action="https://www.google.com/search" method="get">
-            <label for="search-query">Search this site with Google</label>
-            <input type="hidden" name="sitesearch" value="adrianaag.github.io/adriana-alvarado.github.io/">
-            <input id="search-query" type="search" name="q" required>
-            <button type="submit">Search</button>
-          </form>
-        </details>
+  <header class="sidebar">
+    <div class="sidebar-heading">
+      <a class="site-name" href="#about">Adriana Alvarado Garcia, PhD</a>
+      <p class="site-description">HCI research scientist</p>
+    </div>
+
+    <!-- Each link points to a section below. JavaScript updates only its active highlight. -->
+    <nav class="section-navigation" aria-label="Main navigation">
+      <a href="#about"><span class="section-number" aria-hidden="true">01</span>About</a>
+      <a href="#publications"><span class="section-number" aria-hidden="true">02</span>Publications</a>
+      <a href="#recent-news"><span class="section-number" aria-hidden="true">03</span>Recent News</a>
     </nav>
+
+    <details class="site-search">
+      <summary aria-label="Search this site"><span class="search-icon" aria-hidden="true"></span><span class="search-label">Search this site</span></summary>
+      <form action="https://www.google.com/search" method="get">
+        <label for="search-query">Search this site with Google</label>
+        <input type="hidden" name="sitesearch" value="adrianaag.github.io/adriana-alvarado.github.io/">
+        <input id="search-query" type="search" name="q" required>
+        <button type="submit">Search</button>
+      </form>
+    </details>
   </header>
 
-  <main id="main-content" class="about-layout">
-    <aside class="profile" aria-label="Portrait and professional profiles">
-      <img class="portrait" src="assets/adriana.jpg" alt="Adriana Alvarado Garcia" width="365" height="449">
-      <div class="social-links">
-        <a class="linkedin" href="https://www.linkedin.com/in/adrianaalvaradogarcia/" aria-label="LinkedIn profile">in</a>
-        <a class="scholar" href="https://scholar.google.com/citations?user=RM2szxkAAAAJ&amp;hl=en" aria-label="Google Scholar profile">g<span aria-hidden="true">ᶦ</span></a>
+  <!-- All website content lives here; edit these sections directly. -->
+  <main id="main-content" class="site-main" tabindex="-1">
+    <h1 class="visually-hidden">Adriana Alvarado Garcia, PhD</h1>
+
+    <section id="about" class="content-section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About</h2>
+      <div class="about-layout">
+        <aside class="profile" aria-label="Portrait and professional profiles">
+          <img class="portrait" src="assets/adriana.jpg" alt="Adriana Alvarado Garcia" width="365" height="449">
+          <div class="social-links">
+            <a class="linkedin" href="https://www.linkedin.com/in/adrianaalvaradogarcia/" aria-label="LinkedIn profile">in</a>
+            <a class="scholar" href="https://scholar.google.com/citations?user=RM2szxkAAAAJ&amp;hl=en" aria-label="Google Scholar profile">g<span aria-hidden="true">ᶦ</span></a>
+          </div>
+        </aside>
+
+        <section class="biography" aria-label="About Adriana">
+          <!-- Edit the biography paragraphs below. -->
+          <p>
+            I am a HCI research scientist working at the intersection of data work, sociotechnical systems, and
+            community-based research.
+          </p>
+
+          <p>
+            For the past eight years, my work has focused on understanding how data is produced, interpreted, and
+            governed across organizational and institutional contexts. My doctoral research examined the ecosystem
+            of norms, values, and practices that technologists navigate when integrating social media data into
+            institutional settings. After graduate school, I joined the <a
+            href="https://research.ibm.com/labs/yorktown-heights"><strong>IBM Thomas J. Watson Research
+            Center,</strong></a> where I worked as a Staff Research Scientist as part of the <a
+            href="https://research.ibm.com/topics/responsible-technology"><strong>Responsible Technology team.
+            </strong></a>There, I led a comprehensive research agenda focused on <em>data work and data
+            practices</em> for LLMs, which consisted of examining the sociotechnical and governance risks of
+            synthetic and adversarial datasets used in developing and evaluating LLMs.
+          </p>
+
+          <p>
+            Additionally, I have conducted research on impact assessments for emerging technologies and on how
+            youth safety is conceptualized and addressed in generative AI technologies (funded by the <a
+            href="https://ethics.nd.edu/assets/605840/final_2023_24_tel_annual_report.pdf"><strong>Notre Dame-IBM
+            Technology Ethics Lab</strong></a>). These insights had inform the design of methodologies to
+            strengthen the evaluation practices of generative AI systems.
+          </p>
+
+          <p>
+            Alongside my academic work, I have conducted research across industry and public-sector settings,
+            including at Google (YouTube Rapid Research and Chrome), IBM Research, and the <a
+            href="https://www.undp.org/acceleratorlabs/undp-mexico-accelerator-lab"><strong>UNDP Mexico Accelerator
+            Lab. </strong></a>
+          </p>
+
+          <p>
+            I hold a PhD in Human-Centered Computing from Georgia Tech’s School of Interactive Computing, advised
+            by <a href="https://www.khoury.northeastern.edu/people/chris-le-dantec/"><strong>Christopher Le
+            Dantec,</strong></a> and a master’s degree in Human-Computer Interaction from Indiana University
+            Indianapolis, advised by <a href="https://www.cc.gatech.edu/people/lynn-dombrowski"><strong>Lynn
+            Dombrowski.</strong></a> Before moving to the U.S., I earned a master’s in Cognitive Systems from
+            Pompeu Fabra University in Barcelona, Spain, and a B.A. in Animation and Digital Arts from Instituto
+            Tecnológico y de Estudios Superiores de Monterrey (ITESM).
+          </p>
+        </section>
       </div>
-    </aside>
+    </section>
 
-    <section class="biography" aria-label="About Adriana">
-      <h1 class="visually-hidden">About Adriana Alvarado Garcia</h1>
-      <!-- Edit the biography paragraphs below. -->
-      <p>
-        I am a HCI research scientist working at the intersection of data work, sociotechnical systems, and
-        community-based research.
-      </p>
+    <section id="publications" class="content-section publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading" class="section-title">Publications</h2>
 
-      <p>
-        For the past eight years, my work has focused on understanding how data is produced, interpreted, and
-        governed across organizational and institutional contexts. My doctoral research examined the ecosystem
-        of norms, values, and practices that technologists navigate when integrating social media data into
-        institutional settings. After graduate school, I joined the <a
-        href="https://research.ibm.com/labs/yorktown-heights"><strong>IBM Thomas J. Watson Research
-        Center,</strong></a> where I worked as a Staff Research Scientist as part of the <a
-        href="https://research.ibm.com/topics/responsible-technology"><strong>Responsible Technology team.
-        </strong></a>There, I led a comprehensive research agenda focused on <em>data work and data
-        practices</em> for LLMs, which consisted of examining the sociotechnical and governance risks of
-        synthetic and adversarial datasets used in developing and evaluating LLMs.
-      </p>
+      <!-- Years are collapsed initially. Add 'open' to a details tag to expand it by default. -->
+      <!-- 2025: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2025">
+        <summary><h3>2025</h3></summary>
+        <article class="publication">
+          <h4>
+            <a href="https://ojs.aaai.org/index.php/AIES/article/view/36538">Disciplinary Practices in the
+            Generation of Text Synthetic Data: A Critical Discourse Analysis.</a>
+          </h4>
+          <p class="authors">
+            <u>Alvarado Garcia, A.,</u> Shukla, N. A., Azmat, M.,&amp; Wong-Villacres, M.
+          </p>
+          <p class="venue">
+            AIES 2025 Conference Paper
+          </p>
+        </article>
 
-      <p>
-        Additionally, I have conducted research on impact assessments for emerging technologies and on how
-        youth safety is conceptualized and addressed in generative AI technologies (funded by the <a
-        href="https://ethics.nd.edu/assets/605840/final_2023_24_tel_annual_report.pdf"><strong>Notre Dame-IBM
-        Technology Ethics Lab</strong></a>). These insights had inform the design of methodologies to
-        strengthen the evaluation practices of generative AI systems.
-      </p>
+        <article class="publication">
+          <h4>
+            <a href="https://www.ibm.com/downloads/documents/us-en/1379d3325a5ae60f">Unlocking AI Opportunities
+            with the Responsible Generation and Use of Synthetic Data</a>
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia, </u>Alina Glaubitz, Aliza Heching, Andrea Greggo, Eda Kavlakoglu, Enikõ
+            Rózsa, Erik Altman, Jamie VanDodick, Joy Deng, Kristi Spess, Muneeza Azmat, Perla Khattar, Saishruthi
+            Swaminathan, Rogerio Abreu de Paula.
+          </p>
+          <p class="venue">
+            IBM Responsible Technology Board Point of View 2025
+          </p>
+        </article>
 
-      <p>
-        Alongside my academic work, I have conducted research across industry and public-sector settings,
-        including at Google (YouTube Rapid Research and Chrome), IBM Research, and the <a
-        href="https://www.undp.org/acceleratorlabs/undp-mexico-accelerator-lab"><strong>UNDP Mexico Accelerator
-        Lab. </strong></a>
-      </p>
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3757639">Online Safety for All: Sociocultural Insights from a
+            Systematic Review of Youth Online Safety in the Global South.</a>
+          </h4>
+          <p class="authors">
+            Ozioma C. Oguine, Oghenemaro Anuyah, Zainab Agha, Iris Melgarez, <u>Adriana Alvarado Garcia,
+            </u>Karla Badillo-Urquiola.
+          </p>
+          <p class="venue">
+            CSCW 2025 Conference Paper
+          </p>
+        </article>
 
-      <p>
-        I hold a PhD in Human-Centered Computing from Georgia Tech’s School of Interactive Computing, advised
-        by <a href="https://www.khoury.northeastern.edu/people/chris-le-dantec/"><strong>Christopher Le
-        Dantec,</strong></a> and a master’s degree in Human-Computer Interaction from Indiana University
-        Indianapolis, advised by <a href="https://www.cc.gatech.edu/people/lynn-dombrowski"><strong>Lynn
-        Dombrowski.</strong></a> Before moving to the U.S., I earned a master’s in Cognitive Systems from
-        Pompeu Fabra University in Barcelona, Spain, and a B.A. in Animation and Digital Arts from Instituto
-        Tecnológico y de Estudios Superiores de Monterrey (ITESM).
-      </p>
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3715070.3748294">Bridging Expertise and Participation in AI:
+            Multistakeholder Approaches to Safer AI Systems for Youth Online Safety. </a>
+          </h4>
+          <p class="authors">
+            Ozioma C. Oguine, Johanna Olesk, Jaemarie Solyst, Michael Madaio, Michael Muller, <u>Adriana Alvarado
+            Garcia, </u>and Karla Badillo-Urquiola.
+          </p>
+          <p class="venue">
+            CSCW 2025 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3706598.3714069">Emerging Data Practices: Data Work in the
+            Era of Large Language Models.</a>
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia,</u> Heloisa Candello, Karla Badillo-Urquiola, and Marisol Wong-Villacres.
+          </p>
+          <p class="venue">
+            CHI 2025 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/23299460.2025.2499302">Opportunities and
+            challenges of multidisciplinary algorithmic impact assessments. </a>
+          </h4>
+          <p class="authors">
+            Becerra Sandoval, J. C., Jing, F., <u>Alvarado Garcia, A.,</u> Berger, S. E., Candello, H., &amp;
+            Lustig, C.
+          </p>
+          <p class="venue">
+            Journal of Responsible Innovation 2025
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3701216">What Knowledge Do We Produce from Social Media Data
+            and How? </a>
+          </h4>
+          <p class="authors">
+            Adriana Alvarado Garcia, Tianling Yang, and Milagros Miceli.
+          </p>
+          <p class="venue">
+            GROUP 2025 Conference Paper 🏆 Best Paper Award
+          </p>
+        </article>
+      </details>
+
+      <!-- 2024: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2024">
+        <summary><h3>2024</h3></summary>
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3613904.3642673">Bitacora: A Toolkit for Supporting
+            NonProfits to Critically Reflect on Social Media Data Use. </a>
+          </h4>
+          <p class="authors">
+            Adriana Alvarado Garcia, Marisol Wong-Villacres, Benjamín Hernández, and Christopher A Le Dantec.
+          </p>
+          <p class="venue">
+            CHI 2024 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3678884.3681836">Practicing Inclusivity in AI: Stakeholder
+            Engagement Policy in Action.</a>
+          </h4>
+          <p class="authors">
+            Tina M. Park, <u>Adriana Alvarado Garcia, </u>Juana Catalina Becerra Sandoval, Jiyoo Chang, Bill
+            Curtis-Davidson, Remi Denton, Seeta Peña Gangadharan, Lara Groves, Jerremy Holland, Kenneth Holstein,
+            Tamara Kneese, Jacob Metcalf, Emanuel Moss, Wilneida Negrón, Afsaneh Rigot, and Lauren Wilcox.
+          </p>
+          <p class="venue">
+            CSCW 2024 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3678884.3681904">Identifying the Values that Shape HCI and
+            CSCW Research with Latin American Communities: A Collaborative Autoethnography. </a>
+          </h4>
+          <p class="authors">
+            Carla F. Griggio, Mayra D. Barrera Machuca, Marisol Wong-Villacres, Laura S. Gaytán-Lugo, Karla
+            Badillo-Urquiola, <u>Adriana Alvarado Garcia,</u> Monica Perusquia-Hernandez, Marianela Ciolfi
+            Felice, Franceli L. Cibrian, Michaelanne Thomas, Carolina Fuentes, and Pedro Reynolds-Cuéllar.
+          </p>
+          <p class="venue">
+            CSCW 2024 Poster
+          </p>
+        </article>
+      </details>
+
+      <!-- 2023: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2023">
+        <summary><h3>2023</h3></summary>
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3544548.3580916">Mobilizing Social Media Data: Reflections of
+            a Researcher Mediating between Data and Organization. </a>
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia, </u>Marisol Wong-Villacres, Milagros Miceli, Benjamín Hernández, and
+            Christopher A Le Dantec.
+          </p>
+          <p class="venue">
+            CHI 2023 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3584931.3611282">Community-driven AI: Empowering people
+            through responsible data-driven decision-making. </a>
+          </h4>
+          <p class="authors">
+            Ruyuan Wan, <u>Adriana Alvarado Garcia, </u>Devansh Saxena, Catalina Vajiac, Anna Kawakami, Logan
+            Stapleton, Haiyi Zhu, Kenneth Holstein, Heloisa Candello, and Karla Badillo-Urquiola.
+          </p>
+          <p class="venue">
+            CSCW 2023 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            FUBU: Community and Care in Conferences and Research. «Critiquing and Rethinking Fairness,
+            Accountability, and Transparency»
+          </h4>
+          <p class="authors">
+            Emnet Tafesse, Lauren Quigley, <u>Adriana Alvarado Garcia, </u>J. Becerra Sandoval, and Ranjit Singh.
+          </p>
+          <p class="venue">
+            FAccT 2023 CRAFT Session
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3545947.3569601">Trajectory of Hispanic Women Professionals:
+            Challenges and Strategies. </a>
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia, </u>Karla Badillo-Urquiola, Brianna Posadas, and Manuel A.
+            Pérez-Quiñones.
+          </p>
+          <p class="venue">
+            SIGCSE 2023 Panel | <a
+            href="https://women.acm.org/latina-computing-professionals-panel-at-tapia-2022/">ACM-W Note</a>
+          </p>
+        </article>
+      </details>
+
+      <!-- 2022: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2022">
+        <summary><h3>2022</h3></summary>
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3555623">Documenting Data Production Processes: A
+            Participatory Approach for Data Work. </a>
+          </h4>
+          <p class="authors">
+            Milagros Miceli, Tianling Yang, <u>Adriana Alvarado Garcia, </u>Julian Posada, Sonja Mei Wang, Marc
+            Pohl, and Alex Hanna.
+          </p>
+          <p class="venue">
+            CSCW 2022 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3491101.3516404">SIGuiendo’ Each Other Steps. </a>
+          </h4>
+          <p class="authors">
+            Heloisa Candello, Adriana S Vivacqua, Pedro Reynolds-Cuéllar, Marisol Wong-Villacres, Laura Sanely
+            Gaytán-Lugo, and <u>Adriana Alvarado Garcia. </u>
+          </p>
+          <p class="venue">
+            CHI 2022 SIG
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3491101.3505222">Crossing Data: Building Bridges with
+            Activist and Academic Practices from and for Latin America (Cruzar datos: Tendiendo Puentes con
+            Prácticas Activistas y Académicas desde y para América Latina). </a>
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia,</u> Ivana Feldfeber, Milagros Miceli, Saide Mobayed, and Helena Suárez
+            Val.
+          </p>
+          <p class="venue">
+            CHI 2022 Workshop
+          </p>
+        </article>
+      </details>
+
+      <!-- 2021: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2021">
+        <summary><h3>2021</h3></summary>
+        <article class="publication">
+          <h4>
+            Resisting Resolution: Enterprise Civic Systems Meet Community Organizing. Multimodal Technologies and
+            Interaction.
+          </h4>
+          <p class="authors">
+            Le Dantec CA, <u>Alvarado Garcia A,</u> Connelly C, Meng A.
+          </p>
+          <p class="venue">
+            Journal Multimodal Technology and Interaction 2021
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Keepin’ it real about race in HCI.
+          </h4>
+          <p class="authors">
+            Race in HCI Collective, Angela D. R. Smith, <u>Adriana Alvarado Garcia,</u> Ian Arawjo, Audrey
+            Bennett, Khalia Braswell, Bryan Dosono, Ron Eglash, Denae Ford, Daniel Gardner, Shamika Goddard, Jaye
+            Nias, Cale Passmore, Yolanda Rankin, Naba Rizvi, Carol F. Scott, Jakita Thomas, Alexandra To, Ihudiya
+            Finda Ogbonnaya-Ogburu, and Marisol Wong-Villacres.
+          </p>
+          <p class="venue">
+            Interactions Magazine (September - October 2021)
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Decolonial Pathways: Our Manifesto for a Decolonizing Agenda in HCI Research and Design.
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia, </u>Juan F. Maestre, Manuhuia Barcham, Marilyn Iriarte, Marisol
+            Wong-Villacres, Oscar A Lemus, Palak Dudani, Pedro Reynolds-Cuéllar, Ruotong Wang, and Teresa
+            Cerratto Pargman.
+          </p>
+          <p class="venue">
+            CHI 2021 alt.chi
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Lessons from Latin America: embracing horizontality to reconstruct HCI as a pluriverse.
+          </h4>
+          <p class="authors">
+            Marisol Wong-Villacres, <u>Adriana Alvarado Garcia,</u> Karla Badillo-Urquiola, Mayra Donaji Barrera
+            Machuca, Marianela Ciolfi Felice, Laura S. Gaytán-Lugo, Oscar A. Lemus, Pedro Reynolds-Cuéllar, and
+            Monica Perusquía-Hernández.
+          </p>
+          <p class="venue">
+            Interactions Magazine (March - April 2021)
+          </p>
+        </article>
+      </details>
+
+      <!-- 2020: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2020">
+        <summary><h3>2020</h3></summary>
+        <article class="publication">
+          <h4>
+            Data Migrations: Exploring the Use of Social Media Data as Evidence for Human Rights Advocacy.
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia,</u> Matthew J. Britton, Dhairya Manish Doshi, Munmun De Choudhury, and
+            Christopher A. Le Dantec.
+          </p>
+          <p class="venue">
+            CSCW 2020 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Decolonizing Learning Spaces for Sociotechnical Research and Design.
+          </h4>
+          <p class="authors">
+            Marisol Wong-Villacres, <u>Adriana Alvarado Garcia, </u>Juan F. Maestre, Pedro Reynolds-Cuéllar,
+            Heloisa Candello, Marilyn Iriarte, and Carl DiSalvo.
+          </p>
+          <p class="venue">
+            CSCW 2020 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Civic Technologies: Research, Practice and Open Challenges.
+          </h4>
+          <p class="authors">
+            Pablo Aragon,Adriana Alvarado Garcia, Christopher A. Le Dantec, Claudia Flores-Saviaga, and Jorge
+            Saldivar.
+          </p>
+          <p class="venue">
+            CSCW 2020 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Fostering HCI Research in, by, and for Latin America.
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia,</u> Karla Badillo-Urquiola, Mayra D. Barrera Machuca, Franceli L.
+            Cibrian, Marianela Ciolfi Felice, Laura S. Gaytán-Lugo, Diego Gómez-Zará, Carla F. Griggio, Monica
+            Perusquia-Hernandez, Soraia Silva-Prietch, Carlos E. Tejada, and Marisol Wong-Villacres.
+          </p>
+          <p class="venue">
+            CHI 2020 SIG
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            What’s Race Got To Do With It? Engaging in Race in HCI.
+          </h4>
+          <p class="authors">
+            Angela D. R. Smith, Alex A. Ahmed, <u>Adriana Alvarado Garcia, </u>Bryan Dosono, Ihudiya
+            Ogbonnaya-Ogburu, Yolanda Rankin, Alexandra To, and Kentaro Toyama.
+          </p>
+          <p class="venue">
+            CHI 2020 Workshop
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Reflections from the Classroom and Beyond: Imagining a Decolonized HCI Education.
+          </h4>
+          <p class="authors">
+            Marisol Wong-Villacres, <u>Adriana Alvarado Garcia,</u> and Javier Tibau.
+          </p>
+          <p class="venue">
+            CHI 2020 alt.chi
+          </p>
+        </article>
+      </details>
+
+      <!-- 2019: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2019">
+        <summary><h3>2019</h3></summary>
+        <article class="publication">
+          <h4>
+            Bringing Shades of Feminism To Human-Centered Computing.
+          </h4>
+          <p class="authors">
+            Manasee Narvilkar, Josiah Mangiameli, <u>Adriana Alvarado Garcia, </u>Azra Ismail, Daniel Schiff,
+            Danielle Schechter, Jordan Chen, Karthik Bhat, Marisol Wong-Villacres, Anusha Vasudeva, Aparna
+            Ramesh, Michaelanne Dye, Naveena Karusala, Pragati Singh, Savanthi Murthy, Shubhangi Gupta, Udaya
+            Lakshmi, and Neha Kumar.
+          </p>
+          <p class="venue">
+            CHI 2019 alt.chi
+          </p>
+        </article>
+      </details>
+
+      <!-- 2018: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2018">
+        <summary><h3>2018</h3></summary>
+        <article class="publication">
+          <h4>
+            Quotidian Report: Grassroots Data Practices to Address Public Safety.
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia </u>and Christopher A. Le Dantec.
+          </p>
+          <p class="venue">
+            CSCW 2018 Conference Paper
+          </p>
+        </article>
+      </details>
+
+      <!-- 2017: copy an article block to add a publication. -->
+      <details class="publication-year" id="year-2017">
+        <summary><h3>2017</h3></summary>
+        <article class="publication">
+          <h4>
+            On Making Data Actionable: How Activists Use Imperfect Data to Foster Social Change for Human Rights
+            Violations in Mexico.
+          </h4>
+          <p class="authors">
+            <u>Adriana Alvarado Garcia, </u>Alyson L. Young, and Lynn Dombrowski.
+          </p>
+          <p class="venue">
+            CSCW 2018 Conference Paper
+          </p>
+        </article>
+
+        <article class="publication">
+          <h4>
+            Low-Wage Precarious Workers’ Sociotechnical Practices Working Towards Addressing Wage Theft.
+          </h4>
+          <p class="authors">
+            Lynn Dombrowski, Adriana Alvarado Garcia, and Jessica Despard.
+          </p>
+          <p class="venue">
+            CHI 2017 Conference Paper 🏆 Honorable Mention
+          </p>
+        </article>
+      </details>
+    </section>
+
+    <section id="recent-news" class="content-section news" aria-labelledby="news-heading">
+      <h2 id="news-heading" class="section-title">Recent News</h2>
+
+      <!-- Add new months at the top. Copy a section for a month, or an li for one news item. -->
+      <section class="news-month" aria-labelledby="november-2025">
+        <h3 id="november-2025">November, 2025</h3>
+        <ul>
+          <li>
+            Attended the <a href="https://www.aies-conference.com/2025/"><u><strong>AIES Conference
+            </strong></u></a>in Madrid and presented our paper:<a
+            href="https://ojs.aaai.org/index.php/AIES/article/view/36538"><em> </em><em><strong>Disciplinary
+            Practices in the Generation of Text Synthetic Data: A Critical Discourse Analysis.
+            </strong></em></a>In this work, we reported on a Critical Discourse Analysis through which we
+            identified three recurring disciplinary practices of practitioners when generating text synthetic
+            data that led to establishing and reinforcing <em>Cultural Scarcity,</em> and propose a set of
+            recommendations to counteract it.
+          </li>
+          <li>
+            Our paper: <a href="https://dl.acm.org/doi/10.1145/3757639"><em><strong>Online Safety for All:
+            Sociocultural Insights from a Systematic Review of Youth Online Safety in the Global
+            South</strong></em> </a>was presented at <a
+            href="https://cscw.acm.org/2025/"><strong>CSCW</strong></a> by <a
+            href="https://www.linkedin.com/in/ozioma-oguine-083653135/overlay/about-this-profile/"><strong>Ozioma
+            Oguine</strong></a><strong>. </strong>In this article, we report on a systematic literature review of
+            66 youth online safety research studies (2014–2024) with emphasis on the Global South, identifying
+            methodological gaps, underrepresented youth populations, and culturally specific risk factors.
+          </li>
+        </ul>
+      </section>
+
+      <section class="news-month" aria-labelledby="october-2025">
+        <h3 id="october-2025">October, 2025</h3>
+        <ul>
+          <li>
+            I am happy to share that insights from the data work research I have been leading have been
+            incorporated into the<a href="https://www.ibm.com/docs/en/watsonx/saas?topic=ai-risk-atlas"><strong>
+            IBM AI Risk Atlas. </strong></a>We translated empirical research into risks that are specifically
+            associated with the use of synthetic data, and risks that are increased or more likely to occur due
+            to the use of synthetic data.
+          </li>
+        </ul>
+      </section>
+
+      <section class="news-month" aria-labelledby="september-2025">
+        <h3 id="september-2025">September, 2025</h3>
+        <ul>
+          <li>
+            Excited to share the recent publication of our latest <a
+            href="https://www.ibm.com/downloads/documents/us-en/1379d3325a5ae60f"><strong>POV on synthetic
+            data</strong></a><strong>,</strong> exploring its benefits, risk mitigations, and offering actionable
+            guidance on best practices for its generation and responsible use. This work is the result of a
+            dedicated workstream of the<a
+            href="https://www.ibm.com/think/author/ibm-responsible-technology-board"> <strong>IBM Responsible
+            Technology Board,</strong> </a>focused solely on synthetic data and data work, which I am proud to
+            co-lead with<a href="https://www.linkedin.com/in/alina-glaubitz/"> <strong>Alina
+            Glaubitz</strong></a><strong>,</strong> alongside an exceptional group of contributors whose insights
+            made this possible.
+          </li>
+        </ul>
+      </section>
+
+      <section class="news-month" aria-labelledby="may-2025">
+        <h3 id="may-2025">May, 2025</h3>
+        <ul>
+          <li>
+            From May 26 to 30, I had the opportunity to participate in the third edition of the <a
+            href="https://mila.quebec/en/news/highlights-from-the-2025-summer-school-in-responsible-ai-and-human-rights"><strong>Summer
+            School in Responsible AI and Human Rights,</strong></a> organized by <a
+            href="https://mila.quebec/en"><strong>Mila</strong></a> and Université de Montréal.
+          </li>
+        </ul>
+      </section>
+
+      <section class="news-month" aria-labelledby="april-2025">
+        <h3 id="april-2025">April, 2025</h3>
+        <ul>
+          <li>
+            Attended CHI and presented our paper <a
+            href="https://dl.acm.org/doi/10.1145/3706598.3714069"><em><strong>&quot;Emerging Data Practices: Data
+            Work in the Era of Large Language Models&quot;,</strong></em></a> in which we report on an interview
+            study with AI practitioners to examine how data practices evolve across the LLM development
+            lifecycle, identifying key ethical challenges and actionable opportunities for human-centered support
+            in generative AI development.
+          </li>
+          <li>
+            Excited to share the publication of the <a
+            href="https://partnershiponai.org/guidance-for-inclusive-ai/"><em><strong>Guidance for Inclusive AI:
+            Practicing Participatory Engagement. </strong></em></a>This was the result of the wonderful effort of
+            the<a href="https://partnershiponai.org/global-task-force-for-inclusive-ai/"><u> </u><strong>Global
+            Task Force for Inclusive AI,</strong></a> which I have been the luck to be part of, convened by <a
+            href="https://partnershiponai.org"><strong>Partnership on PAI. </strong></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news-month" aria-labelledby="january-2025">
+        <h3 id="january-2025">January, 2025</h3>
+        <ul>
+          <li>
+            I am excited to announce that our paper, <a
+            href="https://dl.acm.org/doi/10.1145/3701216"><em><strong>“What Knowledge Do We Produce from Social
+            Media Data and How?”</strong></em></a> won a Best Paper Award at <a
+            href="https://group.acm.org/conferences/group25/"><strong>GROUP</strong></a> this year.
+          </li>
+          <li>
+            Our paper, <em><strong>“</strong></em><a
+            href="https://dl.acm.org/doi/10.1145/3706598.3714069"><em><strong>Emerging Data Practices: Data Work
+            in the Era of Large Language Models” </strong></em></a>was accepted at <a
+            href="https://chi2025.acm.org"><strong>CHI</strong></a>. I will be attending the conference in person
+            in Yokohama from 26 April to 1 May.
+          </li>
+        </ul>
+      </section>
     </section>
   </main>
 </body>
