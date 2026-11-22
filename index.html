@@ -3,25 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 750px;
-      margin: 80px auto;
-      padding: 20px;
-      background: #f5f7fb;
-      color: #222;
-    }
-    h1 { color: #2563eb; }
-  </style>
+  <meta name="description" content="About — Adriana Alvarado Garcia, HCI research scientist.">
+  <title>About | Adriana Alvarado Garcia, PhD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, I'm Your Name!</h1>
-  <p>Welcome to my website.</p>
-  <h2>About me</h2>
-  <p>Write a little about yourself here.</p>
-  <h2>My projects</h2>
-  <p>I'll share my projects here.</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Keep this header consistent across all three pages. -->
+  <header class="site-header">
+    <a class="site-name" href="index.html">Adriana Alvarado Garcia, PhD</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="recent-news.html">Recent News</a>
+        <details class="site-search">
+          <summary aria-label="Search this site"><span class="search-icon" aria-hidden="true"></span></summary>
+          <form action="https://www.google.com/search" method="get">
+            <label for="search-query">Search this site with Google</label>
+            <input type="hidden" name="sitesearch" value="adrianaag.github.io/adriana-alvarado.github.io/">
+            <input id="search-query" type="search" name="q" required>
+            <button type="submit">Search</button>
+          </form>
+        </details>
+    </nav>
+  </header>
+
+  <main id="main-content" class="about-layout">
+    <aside class="profile" aria-label="Portrait and professional profiles">
+      <img class="portrait" src="assets/adriana.jpg" alt="Adriana Alvarado Garcia" width="365" height="449">
+      <div class="social-links">
+        <a class="linkedin" href="https://www.linkedin.com/in/adrianaalvaradogarcia/" aria-label="LinkedIn profile">in</a>
+        <a class="scholar" href="https://scholar.google.com/citations?user=RM2szxkAAAAJ&amp;hl=en" aria-label="Google Scholar profile">g<span aria-hidden="true">ᶦ</span></a>
+      </div>
+    </aside>
+
+    <section class="biography" aria-label="About Adriana">
+      <h1 class="visually-hidden">About Adriana Alvarado Garcia</h1>
+      <!-- Edit the biography paragraphs below. -->
+      <p>
+        I am a HCI research scientist working at the intersection of data work, sociotechnical systems, and
+        community-based research.
+      </p>
+
+      <p>
+        For the past eight years, my work has focused on understanding how data is produced, interpreted, and
+        governed across organizational and institutional contexts. My doctoral research examined the ecosystem
+        of norms, values, and practices that technologists navigate when integrating social media data into
+        institutional settings. After graduate school, I joined the <a
+        href="https://research.ibm.com/labs/yorktown-heights"><strong>IBM Thomas J. Watson Research
+        Center,</strong></a> where I worked as a Staff Research Scientist as part of the <a
+        href="https://research.ibm.com/topics/responsible-technology"><strong>Responsible Technology team.
+        </strong></a>There, I led a comprehensive research agenda focused on <em>data work and data
+        practices</em> for LLMs, which consisted of examining the sociotechnical and governance risks of
+        synthetic and adversarial datasets used in developing and evaluating LLMs.
+      </p>
+
+      <p>
+        Additionally, I have conducted research on impact assessments for emerging technologies and on how
+        youth safety is conceptualized and addressed in generative AI technologies (funded by the <a
+        href="https://ethics.nd.edu/assets/605840/final_2023_24_tel_annual_report.pdf"><strong>Notre Dame-IBM
+        Technology Ethics Lab</strong></a>). These insights had inform the design of methodologies to
+        strengthen the evaluation practices of generative AI systems.
+      </p>
+
+      <p>
+        Alongside my academic work, I have conducted research across industry and public-sector settings,
+        including at Google (YouTube Rapid Research and Chrome), IBM Research, and the <a
+        href="https://www.undp.org/acceleratorlabs/undp-mexico-accelerator-lab"><strong>UNDP Mexico Accelerator
+        Lab. </strong></a>
+      </p>
+
+      <p>
+        I hold a PhD in Human-Centered Computing from Georgia Tech’s School of Interactive Computing, advised
+        by <a href="https://www.khoury.northeastern.edu/people/chris-le-dantec/"><strong>Christopher Le
+        Dantec,</strong></a> and a master’s degree in Human-Computer Interaction from Indiana University
+        Indianapolis, advised by <a href="https://www.cc.gatech.edu/people/lynn-dombrowski"><strong>Lynn
+        Dombrowski.</strong></a> Before moving to the U.S., I earned a master’s in Cognitive Systems from
+        Pompeu Fabra University in Barcelona, Spain, and a B.A. in Animation and Digital Arts from Instituto
+        Tecnológico y de Estudios Superiores de Monterrey (ITESM).
+      </p>
+    </section>
+  </main>
 </body>
 </html>
