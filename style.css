@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  padding-left: var(--sidebar-width);
   background: #fff;
   color: var(--text);
   font-family: "Quicksand", Arial, sans-serif;
@@ -106,7 +107,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
 
 .site-main {
   max-width: calc(var(--content-width) + 112px);
-  margin-left: var(--sidebar-width);
+  margin: 0 auto;
   padding: 72px 56px 40px;
 }
 .content-section {
@@ -268,6 +269,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
 }
 
 @media (max-width: 820px) {
+  body { padding-left: 0; }
   .sidebar {
     position: sticky;
     overflow: visible;
@@ -287,7 +289,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
   .site-search summary { width: 24px; justify-content: center; }
   .search-label { display: none; }
   .site-search form { top: 40px; right: 0; bottom: auto; left: auto; width: 280px; }
-  .site-main { margin-left: 0; padding: 32px 24px; }
+  .site-main { padding: 32px 24px; }
   .content-section { margin-bottom: 44px; padding-bottom: 48px; scroll-margin-top: 216px; }
   #about { min-height: auto; }
   .section-title { font-size: 32px; margin-bottom: 32px; }
@@ -312,6 +314,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
 }
 
 @media print {
+  body { padding-left: 0; }
   .sidebar, .skip-link, .social-links { display: none; }
   .site-main { margin: 0; padding: 0; max-width: none; }
   .content-section { min-height: auto; }
