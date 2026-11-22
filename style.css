@@ -125,10 +125,10 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
   font-weight: 400;
 }
 
-.sidebar-footer { margin-top: auto; padding-top: 24px; }
+.sidebar-footer { margin-top: auto; padding-top: 24px; border-top: 1px solid #ddd; }
 .site-search {
   position: relative;
-  padding-top: 24px;
+  padding-top: 0;
   font-family: "Source Sans 3", Arial, sans-serif;
   font-size: 14px;
 }
@@ -194,7 +194,6 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
   gap: 25px;
   margin-top: 0;
   padding-top: 24px;
-  border-top: 1px solid #ddd;
   color: #808080;
 }
 .social-links a {
@@ -297,7 +296,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, input:focus-visibl
     gap: 28px;
   }
   .profile { width: min(100%, 365px); margin: auto; }
-  .sidebar-footer { margin-top: 12px; padding-top: 0; }
+  .sidebar-footer { margin-top: 12px; padding-top: 0; border-top: 0; }
   .social-links { gap: 16px; padding-top: 0; border-top: 0; }
   .social-links a { width: 32px; height: 32px; }
   .linkedin { font-size: 26px; }
