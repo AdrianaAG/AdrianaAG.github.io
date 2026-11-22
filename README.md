@@ -34,8 +34,8 @@ portrait, replace `assets/adriana.jpg` or change the image's `src` attribute.
 To add a publication, copy an entire `<article class="publication">` block
 inside the appropriate year's `<details>` element, then edit its title,
 authors, venue, and links. For a new year, copy an entire `<details>` block and
-update its `id` and `<summary>`. Years start collapsed; add `open` to a details
-tag to expand that year by default. Multiple years can be open together.
+update its `id` and `<summary>`. Years start expanded; keep `open` on the details
+tag, or remove it to collapse that year by default. Readers can toggle each year.
 
 To add news, copy a `<li>...</li>` block into the right month's `<ul>`. For a
 new month, copy a whole `<section class="news-month">`, put it at the top of
